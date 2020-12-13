@@ -2,8 +2,8 @@
   "workbench.colorCustomizations": {
     "titleBar.activeForeground": "#000",
     "titleBar.inactiveForeground": "#000000CC",
-    "titleBar.activeBackground": "#FFC600",
-    "titleBar.inactiveBackground": "#FFC600CC"
+    "titleBar.activeBackground": "#E4B363",
+    "titleBar.inactiveBackground": "#E4B363CC"
   },
   // These are all my auto-save configs
   "editor.formatOnSave": true,
