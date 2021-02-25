@@ -35,6 +35,7 @@ export default function BeersPage({ data }) {
       </h2>
       <BeerGridStyles>
         {beers.map((beer) => {
+          if (!beer.rating) return;
           const rating = Math.round(beer.rating.average);
           return (
             <SingleBeerStyles key={beer.id}>
@@ -46,7 +47,7 @@ export default function BeersPage({ data }) {
                 <span style={{ filter: `grayscale(100%)` }}>
                   {`⭐`.repeat(5 - rating)}
                 </span>
-                <span>{`(${beer.rating.reviews})`}</span>
+                <span>{`(${beer.rating?.reviews})`}</span>
               </p>
             </SingleBeerStyles>
           );
